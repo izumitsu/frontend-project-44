@@ -15,5 +15,20 @@
   "bugs": {
     "url": "https://github.com/izumitsu/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/izumitsu/frontend-project-44#readme"
+  "homepage": "https://github.com/izumitsu/frontend-project-44#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "bin": {
+    "code": "bin/brain-games.js", 
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js"
+  },
+  "devDependencies": {
+    "eslint": "^8.34.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jest": "^27.2.1"
+  }
 }
