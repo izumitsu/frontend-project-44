@@ -6,7 +6,7 @@ function logic(answer, trueanswer, i) {
   if (trueanswer === answer) {
     console.log('Correct!');
   } else {
-    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${trueanswer}'.`);
+    console.log(`'${trueanswer}' is wrong answer ;(. Correct answer was '${answer}'.`);
     console.log(`Let's try again, ${name}!`);
     return true;
   }

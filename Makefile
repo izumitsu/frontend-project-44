@@ -1,33 +1,29 @@
-install: install-deps
-	npx simple-git-hooks
-
-run:
-	bin/nodejs-package.js 10
-
-install-deps:
-	npm ci
-
-test:
-	npm test
-
-test-coverage:
-	npm test -- --coverage --coverageProvider=v8
-
 lint:
 	npx eslint .
 
-fix:
-	npx eslint --fix .
+publish: 
+	npm publish --dry-run
 
-publish:
-	npm publish
+install:
+	npm ci
+
+brain-games:
+	node bin/brain-games.js
 
 brain-even:
 	node bin/brain-even.js
 
-brain-games:
-	node bin/brain-games.js
-	
 brain-calc:
 	node bin/brain-calc.js
-	
+
+brain-gcd:
+	node bin/brain-gcd.js
+
+brain-progression:
+	node bin/brain-progression.js
+
+brain-prime:
+	node bin/brain-prime.js
+
+fix:
+	npx eslint --fix .
