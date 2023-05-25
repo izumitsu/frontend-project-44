@@ -11,7 +11,7 @@ const gameGcd = () => {
     console.log(`Question: ${random1} ${random2}`);
     const TrueOtvet = String(getDiv(random1, random2));
     const otvet = readlineSync.question('Your answer: ');
-    const ural = logic(otvet, TrueOtvet, i);
+    const ural = logic(TrueOtvet, otvet, i);
     if (ural) {
       break;
     }
